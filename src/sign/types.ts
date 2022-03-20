@@ -51,7 +51,6 @@ export interface Unfollow {
   timestamp?: number;
 }
 
-
 export interface WalletFollow {
   from?: string;
   wallet: string;
@@ -208,14 +207,14 @@ export const unfollowTypes = {
 };
 
 export const walletFollowTypes = {
-  Follow: [
+  WalletFollow: [
     { name: 'from', type: 'address' },
     { name: 'wallet', type: 'string' }
   ]
 };
 
 export const walletUnfollowTypes = {
-  Unfollow: [
+  WalletUnfollow: [
     { name: 'from', type: 'address' },
     { name: 'wallet', type: 'string' }
   ]
